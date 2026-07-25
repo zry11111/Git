@@ -1,22 +1,2 @@
-123
-
-"测试分支合并" 
-// 第 1 处：修复 Bug
-- if (user === null) {
-+ if (!user || user.length === 0) {
-
-
-
-
-
-// 第 2 处：开发新功能
-+ function logout() {
-+   clearSession();
-+   redirectToLogin();
-+ }
-
-
-
-
-// 第 3 处：调试代码
-+ console.log("当前用户:", user);   // 不想提交
+"测试
+分支合并" 
